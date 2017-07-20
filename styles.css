@@ -1,0 +1,60 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+h1 {
+  margin: 25px 25px 76px 25px;
+}
+
+hr {
+  width: 72%;
+  margin-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: auto;
+  flex-wrap: wrap;
+  color: #666;
+  /* margin: 0 20px; */
+  padding: 3em 1em 1em 1em;
+  border: 1px solid green;
+}
+
+.container div {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #666;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: green;
+  font-weight: bold;
+  border-bottom: 2px solid green;
+}
+
+p {
+  text-decoration: none;
+  color: #666;
+  margin: 0;
+}
