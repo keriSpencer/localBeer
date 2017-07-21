@@ -6,26 +6,20 @@ const data = fetch(
   .then(response => response.json())
   .then(data => {
     for (let i = 0; i < data.data.length; i++) {
-      let breweryName = data.data[i].brewery.name
+      let brewery = data.data[i].brewery
 
       let breweryNameDiv = document.createElement('div')
       container.appendChild(breweryNameDiv)
 
-      // let text = document.createElement('p')
-      // text.innerHTML = breweryName
-      // breweryNameDiv.appendChild(text)
-
-      if (data.data[i].website == undefined) {
+      if (brewery.website == undefined) {
         let text = document.createElement('p')
-        text.innerHTML = breweryName
+        text.innerHTML = brewery.name
         breweryNameDiv.appendChild(text)
       } else {
         let link = document.createElement('a')
-        link.href = data.data[i].website
-        link.innerHTML = breweryName
+        link.href = brewery.website
+        link.innerHTML = brewery.name
         breweryNameDiv.appendChild(link)
       }
-
-      // console.log(data.data[i].website)
     }
   })
